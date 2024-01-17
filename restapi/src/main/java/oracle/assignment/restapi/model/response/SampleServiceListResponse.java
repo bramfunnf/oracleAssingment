@@ -8,5 +8,5 @@ import java.util.List;
 @Data
 @Builder
 public class SampleServiceListResponse {
-    List<SampleServiceResponse> sampleservicers;
+    SampleServiceResponse sampleservicers;
 }

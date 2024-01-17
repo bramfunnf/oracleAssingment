@@ -4,6 +4,6 @@ import lombok.Data;
 
 @Data
 public class BaseResponse {
-    private String error_code;
-    private String error_msg;
+    protected String errorCode;
+    protected String errorMsg;
 }

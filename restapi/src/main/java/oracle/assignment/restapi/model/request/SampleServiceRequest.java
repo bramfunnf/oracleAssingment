@@ -4,8 +4,8 @@ import lombok.Getter;
 
 @Getter
 public class SampleServiceRequest {
-    String service_id;
-    String order_type;
+    String serviceId;
+    String orderType;
     String type;
-    String trx_id;
+    String trxId;
 }

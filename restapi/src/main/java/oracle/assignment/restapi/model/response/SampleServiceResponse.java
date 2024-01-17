@@ -4,5 +4,5 @@ import lombok.Data;
 
 @Data
 public class SampleServiceResponse extends BaseResponse{
-    String trx_id;
+    private String trxId;
 }
