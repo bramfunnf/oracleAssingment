@@ -1,0 +1,26 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:v1="http://www.oracle.com/external/services/sampleservice/request/v1.0"
+           targetNamespace="http://www.oracle.com/external/services/sampleservice/request/v1.0"
+           elementFormDefault="qualified">
+
+    <xs:element name="sampleservicerq" type="v1:SampleServiceRqType"/>
+
+    <xs:complexType name="SampleServiceRqType">
+        <xs:sequence>
+            <xs:element name="serviceId" type="xs:string"/>
+            <xs:element name="orderType" type="xs:string"/>
+            <xs:element name="type" type="xs:string"/>
+            <xs:element name="trxId" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:element name="sampleservicers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="error_code" type="xs:string"/>
+                <xs:element name="error_msg" type="xs:string"/>
+                <xs:element name="trx_id" type="xs:string" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
